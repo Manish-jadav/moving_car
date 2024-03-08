@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>method</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("p").click(function () {
+                $(this).hide(500);
+            });
+            $("h3").click(function () {
+                $("p").show(700,);
+                setTimeout(animation, 700);
+                setTimeout(circle, 2000);
+            });
+        });
+        function animation() {
+            $("p").animate({ height: '50px', width: '70px' });
+            $("p").animate({ height: '40px', width: '60px' }, 1000);
+            // $("p").css("border-radius",'50%');
+        }
+        function circle() {
+            // $("p").css({ "border-radius": '50%', "transition-duration": "4s", "rotate": "5000deg" });
+            $("div").animate({ width: 'toggle' }, 2000);
+            // $("p").animate({ width:'toggle' },1000);
+            // $("p").css({"border-radius":'50%',"transition-duration": "2s"});
+
+        }
+    </script>
+    <style>
+        div {
+            display: flex;
+            justify-content: center;
+            /* justify-content: space-between; */
+            padding-top: 20px;
+        }
+
+        p {
+            border: 2px solid white;
+            /* background-color: black; */
+            color: rgb(3, 22, 30);
+            height: 40px;
+            width: 60px;
+            text-align: center;
+            margin-left: 5px;
+            cursor: pointer;
+
+        }
+
+        h3 {
+            padding-top: 30px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Click & Watch 😝 !</h3>
+    <div>
+        <p><img src="./car1.jpg" alt="" width="40px" height="30px"></p>
+        <p><img src="./car1.jpg" alt="" width="40px" height="30px"></p>
+        <p><img src="./car1.jpg" alt="" width="40px" height="30px"></p>
+        <p><img src="./car1.jpg" alt="" width="40px" height="30px"></p>
+        <p><img src="./car1.jpg" alt="" width="40px" height="30px"></p>
+        <p><img src="./car1.jpg" alt="" width="40px" height="30px"></p>
+        <p><img src="./car1.jpg" alt="" width="40px" height="30px"></p>
+        <p><img src="./car1.jpg" alt="" width="40px" height="30px"></p>
+        <!-- <p><img src="./car1.jpg" alt="" width="40px" height="30px"></p>
+        <p><img src="./car1.jpg" alt="" width="40px" height="30px"></p> -->
+    </div>
+</body>
+
+</html>
